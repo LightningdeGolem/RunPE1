@@ -1,0 +1,11 @@
+[package]
+name = "process_injector"
+version = "0.1.0"
+authors = ["me"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winapi = {version = "*", features=["wtypes", "winnt", "processthreadsapi", "winbase", "errhandlingapi", "memoryapi"]}
+windows-dll = "0.3.0"
